@@ -4,13 +4,12 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-import "DataTypes/measurement.proto";
+import "DataTypes/Measurement.proto";
 
 package dolittle.timeseries.microservice.datatypes;
 option csharp_namespace = "Dolittle.TimeSeries.Microservice.DataTypes";
 
-message Vector3 {
+message Vector2 {
     Measurement x = 1;
     Measurement y = 2;
-    Measurement z = 3;
 }

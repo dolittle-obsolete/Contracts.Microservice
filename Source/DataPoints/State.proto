@@ -5,7 +5,7 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
-import "DataTypes/data_point.proto";
+import "DataTypes/DataPoint.proto";
 
 package dolittle.timeseries.microservice.datapoints;
 

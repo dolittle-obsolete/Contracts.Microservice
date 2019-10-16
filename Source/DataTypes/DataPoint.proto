@@ -4,17 +4,14 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-import "DataTypes/measurement.proto";
-import "DataTypes/vector2.proto";
-import "DataTypes/vector3.proto";
+import "google/protobuf/timestamp.proto";
+import "DataTypes/Value.proto";
 
 package dolittle.timeseries.microservice.datatypes;
 option csharp_namespace = "Dolittle.TimeSeries.Microservice.DataTypes";
 
-message Value {
-    oneof value {
-        Measurement measurement_value = 1;
-        Vector2 vector2_value = 2;
-        Vector3 vector3_value = 3;
-    }
+message DataPoint {
+    bytes timeSeries = 1;
+    Value value = 2;
+    google.protobuf.Timestamp timestamp = 3;
 }
