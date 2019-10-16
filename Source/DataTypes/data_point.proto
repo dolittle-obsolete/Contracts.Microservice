@@ -7,9 +7,8 @@ syntax = "proto3";
 import "google/protobuf/timestamp.proto";
 import "DataTypes/value.proto";
 
-package dolittle.timeseries.datatypes;
-
-option csharp_namespace = "Dolittle.TimeSeries.DataTypes";
+package dolittle.timeseries.microservice.datatypes;
+option csharp_namespace = "Dolittle.TimeSeries.Microservice.DataTypes";
 
 message DataPoint {
     bytes timeSeries = 1;

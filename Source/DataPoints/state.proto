@@ -7,12 +7,12 @@ syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "DataTypes/data_point.proto";
 
-package dolittle.timeseries.datapoints.microservice;
+package dolittle.timeseries.microservice.datapoints;
 
-option csharp_namespace = "Dolittle.TimeSeries.DataPoints.Microservice";
+option csharp_namespace = "Dolittle.TimeSeries.Microservice.DataPoints";
 
 message DataPointsState {
-    repeated dolittle.timeseries.datatypes.DataPoint dataPoints = 1;
+    repeated dolittle.timeseries.microservice.datatypes.DataPoint dataPoints = 1;
 }
 
 // Represents the service for datapoint current state
