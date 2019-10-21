@@ -8,8 +8,9 @@ import "DataTypes/Measurement.proto";
 import "DataTypes/Vector2.proto";
 import "DataTypes/Vector3.proto";
 
-package dolittle.timeseries.microservice.datatypes;
-option csharp_namespace = "Dolittle.TimeSeries.Microservice.DataTypes";
+package dolittle.timeseries.datatypes.microservice;
+
+option csharp_namespace = "Dolittle.TimeSeries.DataTypes.Microservice";
 
 message Value {
     oneof value {
