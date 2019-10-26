@@ -9,13 +9,13 @@ import "DataTypes/DataPoint.proto";
 
 package dolittle.timeseries.datapoints.microservice;
 
-option csharp_namespace = "Dolittle.TimeSeries.DataPoints.Microservice";
+option csharp_namespace = "Dolittle.TimeSeries.State.Microservice";
 
-message DataPointsState {
+message DataPoints {
     repeated dolittle.timeseries.datatypes.microservice.DataPoint dataPoints = 1;
 }
 
 // Represents the service for datapoint current state
-service State {
-    rpc GetAll(google.protobuf.Empty) returns(DataPointsState) {}
+service DataPointsState {
+    rpc GetAll(google.protobuf.Empty) returns(DataPoints) {}
 }
